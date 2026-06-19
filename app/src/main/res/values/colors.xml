@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0F1117</color>
+    <color name="sidebar">#161B22</color>
+    <color name="panel">#1A2030</color>
+    <color name="input_bg">#1E2533</color>
+    <color name="accent">#4F8EF7</color>
+    <color name="accent2">#34D399</color>
+    <color name="danger">#F87171</color>
+    <color name="text_main">#E6EDF3</color>
+    <color name="muted">#8B949E</color>
+    <color name="bubble_me">#1D3557</color>
+    <color name="bubble_them">#21262D</color>
+    <color name="green">#3FB950</color>
+    <color name="red_call">#F85149</color>
+</resources>

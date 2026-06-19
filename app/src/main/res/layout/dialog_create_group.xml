@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/panel" android:padding="16dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView android:text="Название группы:" android:textColor="@color/muted"
+        android:textSize="12sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/groupNameInput" android:hint="Название..."
+        android:background="@color/input_bg" android:textColor="@color/text_main"
+        android:textColorHint="@color/muted" android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Добавить участников:" android:textColor="@color/muted"
+        android:textSize="12sp" android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:id="@+id/membersList" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>

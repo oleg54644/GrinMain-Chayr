@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center"
+    android:padding="32dp" android:layout_gravity="center_vertical">
+
+    <TextView android:text="G" android:textSize="64sp" android:textColor="@color/accent"
+        android:textStyle="bold" android:gravity="center"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:text="GrinMain" android:textSize="24sp" android:textColor="@color/text_main"
+        android:textStyle="bold" android:gravity="center" android:layout_marginTop="4dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:text="Мессенджер нового поколения" android:textSize="13sp"
+        android:textColor="@color/muted" android:gravity="center" android:layout_marginBottom="28dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <!-- Tabs -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="16dp">
+        <TextView android:id="@+id/tabLogin" android:text="Вход"
+            android:textSize="16sp" android:textColor="@color/accent" android:textStyle="bold"
+            android:paddingEnd="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tabRegister" android:text="Регистрация"
+            android:textSize="16sp" android:textColor="@color/muted"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/titleText" android:text="Вход в GrinMain"
+        android:textSize="20sp" android:textColor="@color/text_main" android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <!-- Server -->
+    <LinearLayout android:id="@+id/serverGroup" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical"
+        android:visibility="gone" android:layout_marginBottom="12dp">
+        <TextView android:text="Адрес сервера:" android:textColor="@color/muted" android:textSize="12sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/serverInput" android:hint="http://192.168.1.100:5000"
+            android:inputType="textUri" android:background="@color/input_bg"
+            android:textColor="@color/text_main" android:textColorHint="@color/muted"
+            android:padding="12dp" android:textSize="14sp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView android:text="Логин:" android:textColor="@color/muted" android:textSize="12sp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/loginInput" android:hint="username"
+        android:inputType="textNoSuggestions" android:background="@color/input_bg"
+        android:textColor="@color/text_main" android:textColorHint="@color/muted"
+        android:padding="12dp" android:textSize="15sp" android:layout_marginBottom="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <TextView android:text="Пароль:" android:textColor="@color/muted" android:textSize="12sp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/passwordInput" android:hint="••••••"
+        android:inputType="textPassword" android:background="@color/input_bg"
+        android:textColor="@color/text_main" android:textColorHint="@color/muted"
+        android:padding="12dp" android:textSize="15sp" android:layout_marginBottom="8dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/errorText" android:text="" android:textColor="@color/danger"
+        android:textSize="13sp" android:visibility="gone" android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:layout_marginBottom="8dp"/>
+
+    <Button android:id="@+id/submitBtn" android:text="Войти"
+        android:backgroundTint="@color/accent" android:textColor="#FFFFFF"
+        android:textSize="16sp" android:textStyle="bold"
+        android:paddingTop="14dp" android:paddingBottom="14dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>

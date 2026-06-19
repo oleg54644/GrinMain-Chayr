@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GrinMain" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/sidebar</item>
+        <item name="android:textColor">@color/text_main</item>
+    </style>
+    <style name="Theme.GrinMain.Splash" parent="Theme.GrinMain"/>
+    <style name="AlertDialogDark" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorSurface">@color/panel</item>
+        <item name="colorPrimary">@color/accent</item>
+    </style>
+</resources>

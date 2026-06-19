@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <!-- Chat Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:background="@color/panel" android:gravity="center_vertical"
+        android:paddingStart="12dp" android:paddingEnd="8dp">
+        <LinearLayout android:layout_weight="1" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:id="@+id/tvTitle" android:textSize="17sp" android:textStyle="bold"
+                android:textColor="@color/text_main"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvSubtitle" android:textSize="12sp"
+                android:textColor="@color/muted"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/btnCallAudio"
+            android:src="@android:drawable/ic_menu_call"
+            android:backgroundTint="@color/panel" android:tint="@color/green"
+            android:layout_width="40dp" android:layout_height="40dp"/>
+        <ImageButton android:id="@+id/btnCallVideo"
+            android:src="@android:drawable/ic_menu_camera"
+            android:backgroundTint="@color/panel" android:tint="@color/accent"
+            android:layout_width="40dp" android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <!-- Messages -->
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMessages"
+        android:layout_weight="1" android:padding="8dp" android:clipToPadding="false"
+        android:layout_width="match_parent" android:layout_height="0dp"/>
+
+    <!-- Input -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/panel" android:gravity="center_vertical"
+        android:padding="8dp">
+        <EditText android:id="@+id/messageInput"
+            android:hint="Сообщение…" android:textColorHint="@color/muted"
+            android:textColor="@color/text_main" android:background="@color/input_bg"
+            android:padding="10dp" android:textSize="15sp"
+            android:maxLines="4" android:inputType="textMultiLine"
+            android:imeOptions="actionSend"
+            android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <ImageButton android:id="@+id/btnSend"
+            android:src="@android:drawable/ic_menu_send"
+            android:backgroundTint="@color/accent" android:tint="#FFFFFF"
+            android:layout_marginStart="8dp"
+            android:layout_width="44dp" android:layout_height="44dp"/>
+    </LinearLayout>
+</LinearLayout>
